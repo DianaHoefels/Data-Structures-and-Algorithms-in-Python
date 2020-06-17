@@ -6,6 +6,22 @@
 def multiple(n, m):
     return False
 
+# Write a short Python function is_even(k), that takes an integer value and returns True
+# if k is even, and False otherwise. However, your function cannot use the multiplication, modulo,
+# or division operators.
+
+def is_even(int_value):
+    is_even = True
+    for i in range(1, int_value + 1):
+        if is_even == True:
+            is_even = False
+        else:
+            is_even = True
+
+    return is_even
+
+print(is_even(1))
+
 # R-1.3 Write a short Python function, minmax(data), that takes a sequence of one or more numbers,
 # and returns the smallest and largest numbers, in the form of a tuple of length two.
 # Do not use the built-in functions min or max in implementing your solution.
@@ -24,13 +40,13 @@ def minmax(data):
 # to produce a range with values 50, 60, 70, 80?
 
 for i in range(50, 90, 10):
-    print(i)
+    pass#print(i)
 
 # R-1.10 What parameters should be sent to the range constructor,
 # to produce a range with values 8, 6, 4, 2, 0, −2, −4, −6, −8?
 
 for i in range(8, -10, -2):
-    print(i)
+    pass #print(i)
 
 #R-1.11 Demonstrate how to use Python’s list comprehension syntax to produce the
 # list [1, 2, 4, 8, 16, 32, 64, 128, 256].
