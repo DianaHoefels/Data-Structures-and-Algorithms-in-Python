@@ -4,7 +4,12 @@
 # and False otherwise.
 
 def multiple(n, m):
-    return False
+    if n % m == 0:
+        return True
+    else:
+        return False
+
+print(multiple(36, 6))
 
 # Write a short Python function is_even(k), that takes an integer value and returns True
 # if k is even, and False otherwise. However, your function cannot use the multiplication, modulo,
@@ -19,8 +24,6 @@ def is_even(int_value):
             is_even = True
 
     return is_even
-
-print(is_even(1))
 
 # R-1.3 Write a short Python function, minmax(data), that takes a sequence of one or more numbers,
 # and returns the smallest and largest numbers, in the form of a tuple of length two.
