@@ -9,8 +9,6 @@ def multiple(n, m):
     else:
         return False
 
-print(multiple(36, 6))
-
 # Write a short Python function is_even(k), that takes an integer value and returns True
 # if k is even, and False otherwise. However, your function cannot use the multiplication, modulo,
 # or division operators.
@@ -22,7 +20,6 @@ def is_even(int_value):
             is_even = False
         else:
             is_even = True
-
     return is_even
 
 # R-1.3 Write a short Python function, minmax(data), that takes a sequence of one or more numbers,
@@ -56,7 +53,7 @@ for i in range(8, -10, -2):
 
 n = 9
 mylist = [1 << i for i in range(n)]
-print(mylist)
+#print(mylist)
 
 # R-1.12 Python’s random module includes a function choice(data) that returns a random
 # element from a non-empty sequence. The random module includes a more basic function randrange,
