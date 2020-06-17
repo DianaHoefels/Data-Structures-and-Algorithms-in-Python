@@ -9,7 +9,7 @@ def multiple(n, m):
     else:
         return False
 
-# Write a short Python function is_even(k), that takes an integer value and returns True
+# R-1.2 Write a short Python function is_even(k), that takes an integer value and returns True
 # if k is even, and False otherwise. However, your function cannot use the multiplication, modulo,
 # or division operators.
 
@@ -30,6 +30,19 @@ def minmax(data):
     sortedlist = sorted(data)
 
     return (sortedlist[0], sortedlist[-1])
+
+# R-1.4 Write a short Python function that takes a positive integer n and returns the sum of the squares
+# of all the positive integers smaller than n.
+
+def sum_squares(n):
+    if n < 0:
+        raise ValueError('Only positive integers allowed' )
+    sum = 0
+    for i in range(1, n):
+         sum += i**2
+    return sum
+
+#print(sum_squares(3))
 
 # R-1.8 Python allows negative integers to be used as indices into a sequence,
 # such as a string. If string s has length n, and expression s[k] is used for index −n ≤ k < 0,
