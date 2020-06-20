@@ -6,6 +6,7 @@
 # determines if there is a distinct pair of numbers in the sequence whose product
 # is odd.
 import itertools
+import string
 
 
 def check_odd_product(sequence):
@@ -67,3 +68,19 @@ generate_number = gen_num()
 lst_demo = [next(generate_number) for _ in range(10)]
 
 #print(lst_demo)
+
+# C.1.19 Demonstrate how to use Python's list comprehension syntax to produce
+# the list ['a', 'b', 'c', ...'z'] but without having to type all 26 such characters
+# literally.
+
+def alphabet():
+    return [chr(i) for i in range(ord('a'), ord('z') + 1)]
+
+print(alphabet())
+
+# C.1.20 Python's random module includes a function shuffle(data) that accepts a list of
+# elements and randomly reorders the elements so that each possible order occurs with
+# probability. The random module includes a more basic function randint(a,b) that returns a uniformly
+# random integer from a to b (including both endpoints). Using only the randint function,
+# implement your own version of the shuffle function.
+
