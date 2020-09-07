@@ -10,6 +10,7 @@ def permutate_1(start, characters=''):
     else:
         for i in range(len(start)):
             permutate_1(start[:i] + start[i+1:], characters + start[i])
+
 # or with the built-in permutation function from itertools library.
 
 def permutate_2(characters):
