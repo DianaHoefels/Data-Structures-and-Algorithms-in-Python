@@ -90,15 +90,16 @@ def alphabet():
 # C-1.25 Write a short Python function that takes a string s, representing a sentence,
 # and returns a copy of the string with all the punctuation removed. For example, if given string
 # "Let's try, Mike.", this functionn should return 'Lets try Mike.'
+
 import string
+
 def strip_punctuation_1(s):
     return s.translate(str.maketrans('','', string.punctuation))
 
 # or
 
 def strip_punctuation_2(s):
-    punctuation = ['(' , ')' , '?' , ':' , ':' , ',' , '.' , '!' , '/' , '"' , "'"]
-    for punct in punctuation:
+    for punct in ['(' , ')' , '?' , ':' , ':' , ',' , '.' , '!' , '/' , '"' , "'"]:
         s = s.replace(punct, "")
     return s
 print(strip_punctuation_1("Let's try, Mike."))
