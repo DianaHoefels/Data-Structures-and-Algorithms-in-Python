@@ -99,8 +99,8 @@ def strip_punctuation_1(s):
 # or
 
 def strip_punctuation_2(s):
-    for punct in ['(' , ')' , '?' , ':' , ':' , ',' , '.' , '!' , '/' , '"' , "'"]:
-        s = s.replace(punct, "")
+    for punctuation in ['(' , ')' , '?' , ':' , ':' , ',' , '.' , '!' , '/' , '"' , "'"]:
+        s = s.replace(punctuation, "")
     return s
 print(strip_punctuation_1("Let's try, Mike."))
 print(strip_punctuation_2("Let's try, Mike."))
