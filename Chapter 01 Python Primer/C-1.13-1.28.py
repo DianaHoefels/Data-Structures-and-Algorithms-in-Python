@@ -76,7 +76,7 @@ lst_demo = [next(generate_number) for _ in range(10)]
 def alphabet():
     return [chr(i) for i in range(ord('a'), ord('z') + 1)]
 
-print(alphabet())
+#print(alphabet())
 
 # C.1.20 Python's random module includes a function shuffle(data) that accepts a list of
 # elements and randomly reorders the elements so that each possible order occurs with
@@ -84,3 +84,22 @@ print(alphabet())
 # random integer from a to b (including both endpoints). Using only the randint function,
 # implement your own version of the shuffle function.
 
+# C.1.21 Write a Python program that repeatedly reads lines from standard input until an EOFError is raised
+# and then ouputs those lines in reverse order (a user can indicate end of input by typing ctrl-D)
+
+# C-1.25 Write a short Python function that takes a string s, representing a sentence,
+# and returns a copy of the string with all the punctuation removed. For example, if given string
+# "Let's try, Mike.", this functionn should return 'Lets try Mike.'
+import string
+def strip_punctuation_1(s):
+    return s.translate(str.maketrans('','', string.punctuation))
+
+# or
+
+def strip_punctuation_2(s):
+    punctuation = ['(' , ')' , '?' , ':' , ':' , ',' , '.' , '!' , '/' , '"' , "'"]
+    for punct in punctuation:
+        s = s.replace(punct, "")
+    return s
+print(strip_punctuation_1("Let's try, Mike."))
+print(strip_punctuation_2("Let's try, Mike."))
